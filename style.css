@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+            background-image: url("./Images/206b41c8-4668-4997-af92-79aeffb124b7.jpg");
+            height: 588px;
+            max-width: 1512px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            
+}
+header h1{
+    color: cyan;
+    text-align: center;
+    padding-top: 200px;
+    position: relative;
+    font-family: ZCOOL KuaiLe;
+    font-size: 70px;
+}
+
+header p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+header input{
+    position: relative;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border-radius: 50px;
+            padding: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 40px;
+        
+           
+
+            
+    
+    
+}
