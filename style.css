@@ -49,3 +49,51 @@ header input{
             appearance: none;
             
 }
+.anime-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .star {
+            color: #60d9ef;
+            font-size: 1rem;
+        }
+
+        .star.filled {
+            color: #60d9ef;
+            text-shadow: 0 0 10px rgba(96, 217, 239, 0.5);
+        }
+
+        .star.empty {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .rating-value {
+            margin-left: 0.5rem;
+            font-weight: 600;
+            color: #60d9ef;
+        }
+
+        .anime-content {
+            padding: 1.5rem;
+        }
+
+        .genres {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+.anime-image{
+    width: 20%;
+    height: 30%;
+}
