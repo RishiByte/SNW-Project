@@ -17,8 +17,209 @@
         <p class="subtitle">Discover your next favorite anime adventure</p>
         <input type="text" placeholder="Search..">
     </header>
-    <main>
-        
+    <main class="container">
+        <div class="genre-filter">
+            <input type="radio" id="all" name="genre" class="genre-filter" checked>
+            <label for="all" class="genre-label">All</label>
+
+            <input type="radio" id="action" name="genre" class="genre-filter">
+            <label for="action" class="genre-label">Action</label>
+
+            <input type="radio" id="fantasy" name="genre" class="genre-filter">
+            <label for="fantasy" class="genre-label">Adventure</label>
+
+            <input type="radio" id="romance" name="genre" class="genre-filter">
+            <label for="romance" class="genre-label">Fantasy</label>
+
+            <input type="radio" id="scifi" name="genre" class="genre-filter">
+            <label for="scifi" class="genre-label">Supernatural</label>
+
+            <input type="radio" id="dark" name="genre" class="genre-filter">
+            <label for="dark" class="genre-label">Comedy</label>
+
+            <input type="radio" id="slice" name="genre" class="genre-filter">
+            <label for="slice" class="genre-label">Martial Arts</label>
+
+            <input type="radio" id="sports" name="genre" class="genre-filter">
+            <label for="sports" class="genre-label">Sports</label>
+
+            <input type="radio" id="Drama" name="genre" class="genre-filter">
+            <label for="Drama" class="genre-label">Drama</label>
+
+            <input type="radio" id="psychological" name="genre" class="genre-filter">
+            <label for="psychological" class="genre-label">Psychological</label>
+
+        </div>
+<div class="anime-grid">
+            <article class="anime-card action">
+                <div class="anime-image-container">
+                    <img src="./Images/Jujutsu-Kaisen.jpg" alt="Jujutsu Kaisen" class="anime-image">
+                    <div class="anime-overlay">
+                        <h2 class="anime-title">Jujutsu Kaisen</h2>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="rating-value">4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-content">
+                    <div class="genres">
+                        <span class="genre-tag">Action</span>
+                        <span class="genre-tag">Dark Fantasy</span>
+                        <span class="genre-tag">Supernatural</span>
+                        <span class="genre-tag">Horror</span>
+                    </div>
+                    <p class="description">
+                        Jujutsu Kaisen follows Yuji Itadori, a boy who becomes the host of a powerful curse and joins sorcerers to fight evil spirits born from human negativity.
+                    </p>
+                </div>
+            </article>
+
+            <article class="anime-card fantasy">
+                <div class="anime-image-container">
+                    <img src="./Images/One-Piece.jpg" alt="One Piece" class="anime-image">
+                    <div class="anime-overlay">
+                        <h2 class="anime-title">One Piece</h2>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="rating-value">4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-content">
+                    <div class="genres">
+                        <span class="genre-tag">Adventure</span>
+                        <span class="genre-tag">Action</span>
+                        <span class="genre-tag">Comedy</span>
+                        <span class="genre-tag">Fantasy</span>
+                    </div>
+                    <p class="description">
+                        One Piece follows Monkey D. Luffy and his crew on their adventurous journey across the seas to find the legendary treasure “One Piece” and become the Pirate King.
+                </div>
+            </article>
+
+            <article class="anime-card romance slice">
+                <div class="anime-image-container">
+                    <img src="./Images/Naruto.jpg" alt="Naruto Shippuden" class="anime-image">
+                    <div class="anime-overlay">
+                        <h2 class="anime-title">Naruto Shippuden</h2>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="rating-value">4.7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-content">
+                    <div class="genres">
+                        <span class="genre-tag">Action</span>
+                        <span class="genre-tag">Adventure</span>
+                        <span class="genre-tag">Fantasy</span>
+                        <span class="genre-tag">Martial-arts</span>
+                    </div>
+                    <p class="description">
+                        Naruto Shippuden** follows Naruto Uzumakis journey to become stronger, protect his friends, and bring back his lost friend Sasuke while facing powerful enemies and uncovering his destiny.
+
+                    </p>
+                </div>
+            </article>
+
+            <article class="anime-card dark">
+                <div class="anime-image-container">
+                    <img src="./Images/Bleach.jpg" alt="Bleach" class="anime-image">
+                    <div class="anime-overlay">
+                        <h2 class="anime-title">Bleach</h2>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star empty">★</span>
+                            <span class="rating-value">4.6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-content">
+                    <div class="genres">
+                        <span class="genre-tag">Adventure</span>
+                        <span class="genre-tag">Action</span>
+                        <span class="genre-tag">Supernatural</span>
+                        <span class="genre-tag">Fantasy</span>
+                    </div>
+                    <p class="description">
+                        Bleach follows Ichigo Kurosaki, a teenager who gains the powers of a Soul Reaper and battles evil spirits while protecting both the human and spirit worlds.
+                    </p>
+                </div>
+            </article>
+
+            <article class="anime-card scifi action">
+                <div class="anime-image-container">
+                    <img src="./Images/Dragon-ball.jpg" alt="Dragon Ball Z" class="anime-image">
+                    <div class="anime-overlay">
+                        <h2 class="anime-title">Dragon Ball Z</h2>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="rating-value">4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-content">
+                    <div class="genres">
+                        <span class="genre-tag">Action</span>
+                        <span class="genre-tag">Martial Arts</span>
+                        <span class="genre-tag">Adventure</span>
+                        <span class="genre-tag">Fantasy</span>
+                    </div>
+                    <p class="description">
+                        Dragon Ball Z follows Goku and his friends as they defend Earth from powerful foes while striving to become stronger through intense battles and training.
+                    </p>
+                </div>
+            </article>
+
+            <article class="anime-card romance">
+                <div class="anime-image-container">
+                    <img src="./Images/ Bluelock.jpg" alt="Bluelock" class="anime-image">
+                    <div class="anime-overlay">
+                        <h2 class="anime-title">Bluelock</h2>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="rating-value">4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-content">
+                    <div class="genres">
+                        <span class="genre-tag">Romance</span>
+                        <span class="genre-tag">Drama</span>
+                        <span class="genre-tag">Shoujo</span>
+                    </div>
+                    <p class="description">
+                        Blue Lock follows a group of elite young strikers competing in a ruthless training program to become Japans ultimate striker and lead the nation to World Cup victory.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+
     </main>
     
 </body>
