@@ -42,8 +42,9 @@ padding: 0;
 }
 
 .Nav-Element:hover{
-    color: red;
+    color: cyan;
     font-size: 25px;
+    cursor: pointer;
 
     
 }
@@ -122,6 +123,7 @@ header input{
             font-weight: 700;
             margin-bottom: 0.5rem;
             color: #fff;
+            
         }
 
         .rating {
@@ -190,6 +192,7 @@ header input{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     color: white;
     text-align: center;
+    cursor: pointer;
     
 }
 .genre-label:hover {
@@ -213,3 +216,4 @@ header input{
             box-shadow: 0 20px 60px rgba(184, 148, 246, 0.3), 
                         0 0 40px rgba(184, 148, 246, 0.2);
         }
+
