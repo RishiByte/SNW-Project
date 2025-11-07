@@ -1,4 +1,4 @@
 # SNW-Project
 Creating project for college 
-using mostly html and css
+using mostly html and css rn
 
