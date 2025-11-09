@@ -42,6 +42,9 @@ text-shadow: 0 0 15px #ff7aff, 0 0 25px #6edbff;
 
 .Nav-Element{
     width: 100px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 
 }
 
@@ -247,7 +250,7 @@ header input{
   .hero { height: 380px; background-position: center top; }
   header h1 { font-size: 32px; padding-top: 90px; }
   header input { width: 90%; margin-left: 5%; margin-top: 18px; padding: 10px; }
-  .genre-filter { width: 94%; margin-left: 3%; gap: 0.4rem; height: auto; }
+  .genre-filter {  width: 94%; margin-left: 3%; gap: 0.4rem; height: auto; }
   .genre-label { padding: 0.5rem 0.8rem; font-size: 0.85rem; }
   .anime-grid { gap: 12px; grid-template-columns: repeat(1, 1fr); padding: 12px; }
   .anime-image { height: 180px; width: 100%; object-fit: cover; }
@@ -256,95 +259,29 @@ header input{
   .Nav-Element { width: auto; font-size: 14px; }
 }
 
-@media (max-width: 640px) {
-  .hero { height: 440px; }
-  header h1 { font-size: 42px; padding-top: 120px; }
-  header input { width: 92%; margin-left: 4%; }
-  .genre-filter { width: 92%; margin-left: 4%; gap: 0.5rem; }
-  .anime-grid { grid-template-columns: repeat(1,1fr); }
-  .anime-image { height: 200px; }
-  .Nav-Bar { width: calc(100% - 28px); padding: 10px 14px; }
+.contact-form input, .contact-form textarea, .contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+.contact-form button {
+  background: linear-gradient(135deg, #b794f6 0%, #f093fb 100%);
+  border: none;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(184,148,246,0.5);
 }
 
-@media (max-width: 900px) {
-  .container { padding: 1.25rem; }
-  .hero { height: 480px; }
-  header h1 { font-size: 56px; padding-top: 140px; }
-  header input { width: 80%; margin-left: 10%; }
-  .genre-filter { width: 95%; margin-left: 2.5%; gap: 0.6rem; display: flex; flex-wrap: wrap; }
-  .anime-grid { grid-template-columns: repeat(2,1fr); gap: 14px; padding: 14px; }
-  .anime-image { height: 220px; }
-  .Nav-Bar { width: calc(100% - 36px); padding: 10px 16px; }
+.yp{
+    font-size: 20px;
+    color: violet;
+    ;
+   
+    
 }
-
-@media (max-width: 1200px) {
-  .container { padding: 1.5rem; }
-  .hero { height: 520px; }
-  header h1 { font-size: 72px; padding-top: 160px; }
-  .anime-grid { grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 18px; }
-  .anime-image { height: 240px; }
-  .genre-filter { width: calc(100% - 120px); margin-left: 60px; }
-  .Nav-Bar { max-width: 1000px; }
-}
-
-@media (min-width: 1201px) {
-  .hero { height: 640px; }
-  header h1 { font-size: 100px; padding-top: 200px; }
-  .anime-grid { grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 22px; }
-  .anime-image { height: 300px; }
-  .genre-filter { width: 1000px; margin-left: 215px; }
-  .Nav-Bar { max-width: 1200px; opacity: 0.9; }
-}
-
-@media (max-width: 420px) {
-  .container { padding: 1rem; }
-  .hero { height: 380px; background-position: center top; }
-  header h1 { font-size: 32px; padding-top: 90px; }
-  header input { width: 90%; margin-left: 5%; margin-top: 18px; padding: 10px; }
-  .genre-filter { width: 94%; margin-left: 3%; gap: 0.4rem; height: auto; }
-  .genre-label { padding: 0.5rem 0.8rem; font-size: 0.85rem; }
-  .anime-grid { gap: 12px; grid-template-columns: repeat(1, 1fr); padding: 12px; }
-  .anime-image { height: 180px; width: 100%; object-fit: cover; }
-  .anime-card { padding: 10px; border-radius: 10px; }
-  .Nav-Bar { width: calc(100% - 20px); bottom: 12px; padding: 8px 12px; gap: 8px; opacity: 0.95; }
-  .Nav-Element { width: auto; font-size: 14px; }
-}
-
-@media (max-width: 640px) {
-  .hero { height: 440px; }
-  header h1 { font-size: 42px; padding-top: 120px; }
-  header input { width: 92%; margin-left: 4%; }
-  .genre-filter { width: 92%; margin-left: 4%; gap: 0.5rem; }
-  .anime-grid { grid-template-columns: repeat(1,1fr); }
-  .anime-image { height: 200px; }
-  .Nav-Bar { width: calc(100% - 28px); padding: 10px 14px; }
-}
-
-@media (max-width: 900px) {
-  .container { padding: 1.25rem; }
-  .hero { height: 480px; }
-  header h1 { font-size: 56px; padding-top: 140px; }
-  header input { width: 80%; margin-left: 10%; }
-  .genre-filter { width: 95%; margin-left: 2.5%; gap: 0.6rem; display: flex; flex-wrap: wrap; }
-  .anime-grid { grid-template-columns: repeat(2,1fr); gap: 14px; padding: 14px; }
-  .anime-image { height: 220px; }
-  .Nav-Bar { width: calc(100% - 36px); padding: 10px 16px; }
-}
-
-@media (max-width: 1200px) {
-  .container { padding: 1.5rem; }
-  .hero { height: 520px; }
-  header h1 { font-size: 72px; padding-top: 160px; }
-  .anime-grid { grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 18px; }
-  .anime-image { height: 240px; }
-  .genre-filter { width: calc(100% - 120px); margin-left: 60px; }
-  .Nav-Bar { max-width: 1000px; }
-}
-
-@media (min-width: 1201px) {
-  .hero { height: 640px; }
-  header h1 { font-size: 100px; padding-top: 200px; }
-  .anime-grid { grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 22px; }
-  .anime-image { height: 300px; }
-  .genre-filter { width: 1000px; margin-left: 215px; }
-  .Nav-Bar { max-width: 1200px; opacity: 0.9; }}
