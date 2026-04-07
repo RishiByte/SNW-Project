@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Blue - Anime Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Script&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shojumaru&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <style>
+        .details-container {
+            max-width: 1000px;
+            margin: 120px auto 40px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            display: flex;
+            gap: 40px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        .details-image {
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            object-fit: cover;
+        }
+        .details-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .details-title {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 0 15px #ff7aff, 0 0 25px #6edbff;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #b794f6 0%, #f093fb 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            width: fit-content;
+        }
+        .back-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(184, 148, 246, 0.5);
+        }
+        .details-rating {
+            font-size: 1.5rem;
+            color: #60d9ef;
+            margin-bottom: 20px;
+        }
+        .details-desc {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        @media (max-width: 768px) {
+            .details-container { flex-direction: column; padding: 20px; margin-top: 100px; }
+            .details-image { width: 100%; }
+            .details-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero" style="height: auto; min-height: 100vh; background-position: top; padding-bottom: 50px;">
+        <nav class="Nav-Bar">
+            <a href="./Anime-Recom.html" class="Nav-Element">Home</a>
+            <a href="./about.html" class="Nav-Element">About us</a>
+            <a href="./contact.html" class="Nav-Element">Contact</a>
+            <a href="./services.html" class="Nav-Element">Services</a>
+        </nav>
+        
+        <div class="details-container">
+            <img src="./Images/Grand blue.jpeg" alt="Grand Blue" class="details-image">
+            <div class="details-content">
+                <h1 class="details-title">Grand Blue</h1>
+                <div class="details-rating">Rating: 4.5 / 5.0 ⭐</div>
+                <p class="details-desc">Grand Blue is a hilarious college comedy about diving, friendship, and wild partying that follows Iori Kitahara's chaotic new life by the sea.</p>
+                <a href="./Anime-Recom.html" class="back-btn">← Back to Home</a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

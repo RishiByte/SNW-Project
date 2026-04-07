@@ -22,38 +22,40 @@
         </nav>
         <h1>Anime Recommendation</h1>
         <p class="subtitle" id="text">Discover your next favorite anime adventure</p>
-        <input type="text" placeholder="Wanna search for an anime?" style="color: black; text-align: center;">
+        <input type="text" id="searchInput" class="search-box" placeholder="Wanna search for an anime?">
 
     </header>
     <main class="container">
-        <div class="genre-filter">
-            <input type="radio" id="all" name="genre" class="genre-filter" checked>
+        <div class="genre-filter-container">
+            <input type="radio" id="all" name="genre" value="all" class="genre-filter" checked>
             <label for="all" class="genre-label">All</label>
 
-            <input type="radio" id="action" name="genre" class="genre-filter">
+            <input type="radio" id="action" name="genre" value="action" class="genre-filter">
             <label for="action" class="genre-label">Action</label>
 
-            <input type="radio" id="fantasy" name="genre" class="genre-filter">
-            <label for="fantasy" class="genre-label">Adventure</label>
+            <input type="radio" id="adventure" name="genre" value="adventure" class="genre-filter">
+            <label for="adventure" class="genre-label">Adventure</label>
 
-            <input type="radio" id="romance" name="genre" class="genre-filter">
-            <label for="romance" class="genre-label">Fantasy</label>
+            <input type="radio" id="fantasy" name="genre" value="fantasy" class="genre-filter">
+            <label for="fantasy" class="genre-label">Fantasy</label>
 
-            <input type="radio" id="scifi" name="genre" class="genre-filter">
-            <label for="scifi" class="genre-label">Supernatural</label>
+            <input type="radio" id="supernatural" name="genre" value="supernatural" class="genre-filter">
+            <label for="supernatural" class="genre-label">Supernatural</label>
 
-            <input type="radio" id="dark" name="genre" class="genre-filter">
-            <label for="dark" class="genre-label">Comedy</label>
+            <input type="radio" id="comedy" name="genre" value="comedy" class="genre-filter">
+            <label for="comedy" class="genre-label">Comedy</label>
 
-            <input type="radio" id="slice" name="genre" class="genre-filter">
-            <label for="slice" class="genre-label">Martial Arts</label>
+            <input type="radio" id="martial-arts" name="genre" value="martial-arts" class="genre-filter">
+            <label for="martial-arts" class="genre-label">Martial Arts</label>
 
-            <input type="radio" id="psychological" name="genre" class="genre-filter">
+            <input type="radio" id="psychological" name="genre" value="psychological" class="genre-filter">
             <label for="psychological" class="genre-label">Psychological</label>
-
+            
+            <input type="radio" id="romance" name="genre" value="romance" class="genre-filter">
+            <label for="romance" class="genre-label">Romance</label>
         </div>
 <div class="anime-grid">
-            <article class="anime-card action">
+            <article onclick="window.location.href='jujutsu-kaisen.html'" class="anime-card action supernatural">
                 <div class="anime-image-container">
                     <img src="./Images/Jujutsu-Kaisen.jpg" alt="Jujutsu Kaisen" class="anime-image">
                     <div class="anime-overlay">
@@ -81,7 +83,7 @@
                 </div>
             </article>
 
-            <article class="anime-card fantasy">
+            <article onclick="window.location.href='one-piece.html'" class="anime-card adventure action comedy fantasy">
                 <div class="anime-image-container">
                     <img src="./Images/One-Piece.jpg" alt="One Piece" class="anime-image">
                     <div class="anime-overlay">
@@ -105,10 +107,11 @@
                     </div>
                     <p class="description">
                         One Piece follows Monkey D. Luffy and his crew on their adventurous journey across the seas to find the legendary treasure “One Piece” and become the Pirate King.
+                    </p>
                 </div>
             </article>
 
-            <article class="anime-card romance slice">
+            <article onclick="window.location.href='naruto-shippuden.html'" class="anime-card action adventure fantasy martial-arts">
                 <div class="anime-image-container">
                     <img src="./Images/Naruto.jpg" alt="Naruto Shippuden" class="anime-image">
                     <div class="anime-overlay">
@@ -128,16 +131,15 @@
                         <span class="genre-tag">Action</span>
                         <span class="genre-tag">Adventure</span>
                         <span class="genre-tag">Fantasy</span>
-                        <span class="genre-tag">Martial-arts</span>
+                        <span class="genre-tag">Martial Arts</span>
                     </div>
                     <p class="description">
-                        Naruto Shippuden** follows Naruto Uzumakis journey to become stronger, protect his friends, and bring back his lost friend Sasuke while facing powerful enemies and uncovering his destiny.
-
+                        Naruto Shippuden follows Naruto Uzumaki's journey to become stronger, protect his friends, and bring back his lost friend Sasuke while facing powerful enemies and uncovering his destiny.
                     </p>
                 </div>
             </article>
 
-            <article class="anime-card dark">
+            <article onclick="window.location.href='bleach.html'" class="anime-card adventure action supernatural fantasy">
                 <div class="anime-image-container">
                     <img src="./Images/Bleach.jpg" alt="Bleach" class="anime-image">
                     <div class="anime-overlay">
@@ -165,7 +167,7 @@
                 </div>
             </article>
 
-            <article class="anime-card scifi action">
+            <article onclick="window.location.href='dragon-ball-z.html'" class="anime-card action martial-arts adventure fantasy">
                 <div class="anime-image-container">
                     <img src="./Images/Dragon-ball.jpg" alt="Dragon Ball Z" class="anime-image">
                     <div class="anime-overlay">
@@ -193,7 +195,7 @@
                 </div>
             </article>
 
-            <article class="anime-card romance">
+            <article onclick="window.location.href='bluelock.html'" class="anime-card romance">
                 <div class="anime-image-container">
                     <img src="./Images/ Bluelock.jpg" alt="Bluelock" class="anime-image">
                     <div class="anime-overlay">
@@ -215,11 +217,11 @@
                         <span class="genre-tag">Shoujo</span>
                     </div>
                     <p class="description">
-                        Blue Lock follows a group of elite young strikers competing in a ruthless training program to become Japans ultimate striker and lead the nation to World Cup victory.
+                        Blue Lock follows a group of elite young strikers competing in a ruthless training program to become Japan's ultimate striker and lead the nation to World Cup victory.
                     </p>
                 </div>
             </article>
-            <article class="anime-card dark">
+            <article onclick="window.location.href='attack-on-titan.html'" class="anime-card psychological action fantasy">
                 <div class="anime-image-container">
                     <img src="./Images/Attack.jpg" alt="Attack On Titan" class="anime-image">
                     <div class="anime-overlay">
@@ -241,10 +243,10 @@
                         <span class="genre-tag">Fantasy</span>
                     </div>
                     <p class="description">
-                    Attack on Titan is about humanitys desperate fight for survival against man-eating giants, uncovering dark truths about freedom, war, and the cycle of hatred.                    </p>
+                    Attack on Titan is about humanity's desperate fight for survival against man-eating giants, uncovering dark truths about freedom, war, and the cycle of hatred.                    </p>
                 </div>
             </article>
-            <article class="anime-card dark">
+            <article onclick="window.location.href='demon-slayer.html'" class="anime-card adventure action fantasy">
                 <div class="anime-image-container">
                     <img src="./Images/Demon Slayer the Movie Mugen Train.jpeg" alt="Demon Slayer" class="anime-image">
                     <div class="anime-overlay">
@@ -269,7 +271,7 @@
                     Demon Slayer follows a young boy, Tanjiro Kamado, who becomes a demon slayer to avenge his family and find a cure for his sister, who has been turned into a demon.                    </p>
                 </div>
             </article>
-            <article class="anime-card dark">
+            <article onclick="window.location.href='grand-blue.html'" class="anime-card comedy fantasy">
                 <div class="anime-image-container">
                     <img src="./Images/Grand blue.jpeg" alt="Grand Blue" class="anime-image">
                     <div class="anime-overlay">
@@ -291,10 +293,10 @@
                         <span class="genre-tag">Drama</span>
                     </div>
                     <p class="description">
-                    Grand Blue is a hilarious college comedy about diving, friendship, and wild partying that follows Iori Kitaharas chaotic new life by the sea.                    </p>
+                    Grand Blue is a hilarious college comedy about diving, friendship, and wild partying that follows Iori Kitahara's chaotic new life by the sea.                    </p>
                 </div>
             </article>
-            <article class="anime-card dark">
+            <article onclick="window.location.href='dandadan.html'" class="anime-card action supernatural fantasy comedy">
                 <div class="anime-image-container">
                     <img src="./Images/_ copy.jpeg" alt="DanDaDan" class="anime-image">
                     <div class="anime-overlay">
@@ -321,9 +323,7 @@
                 </div>
             </article>
         </div>
-
-
     </main>
-    
+    <script src="app.js"></script>
 </body>
 </html>
